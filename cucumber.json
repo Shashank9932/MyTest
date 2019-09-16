@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Registration error-incorrect email",
+        "description": "",
+        "id": "registering-to-automation-practice;registration-error-incorrect-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87850894,
+              "error_message": "java.lang.NullPointerException\n\tat autoapp.automation.pages.RegisterPage.openApplicaiton(RegisterPage.java:46)\n\tat autoapp.automation.stepDef.RegisterStepDef.automation_practice_application_is_opened(RegisterStepDef.java:13)\n\tat ✽.Given Automation practice application is opened(src/test/java/autoapp/automation/features/Register.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I click sign in",
+            "match": {
+              "location": "RegisterStepDef.i_click_sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I create account with emailid \"testRandomtestauto.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testRandomtestauto.com",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterStepDef.i_create_account_with_emailid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I will see an error \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterStepDef.iWillSeeAnError(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registering to automation practice",
+    "description": "",
+    "id": "registering-to-automation-practice",
+    "keyword": "Feature",
+    "uri": "src/test/java/autoapp/automation/features/Register.feature"
+  }
+]
